@@ -6,8 +6,6 @@ par(
   xpd=TRUE
 )
 
-#Main title
-
  
 # Create scatter plot for petals
 plot(
@@ -15,27 +13,37 @@ plot(
   iris$Petal.Width,
   pch=21, # type of symbol
   bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
-  main="Petal", # main title
-  xlab="Length (in cm)", # x title
-  ylab="Width (in cm)" # y title
+  main="Iris Petal Data in Centimeters", # main title
+  xlab="Length", # x title
+  ylab="Width" # y title
 )
 
 #Legend
-legend("bottomright", cex=0.50, pch=16, 
-  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Setosa", "Versicolor", "Virginica"), ncol=3)
+legend("bottomright", 
+  cex=0.50, 
+  pch=16, 
+  col=c("darkorchid3", "chartreuse", "dodgerblue1"), 
+  legend=c("Setosa", "Versicolor", "Virginica"), 
+  ncol=3
+  )
  
+
 # Create scatter plot for sepal
 plot(
   iris$Sepal.Length,
   iris$Sepal.Width,
   pch=21,
   bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
-  main="Sepal",
-  xlab="Length (in cm)",
-  ylab="Width (in cm)"
+  main="Iris Sepal Data in Centimeters",
+  xlab="Length",
+  ylab="Width"
 )
 
 #Legend
-legend("bottomright", cex=0.50, pch=16, 
-  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Setosa", "Versicolor", "Virginica"), ncol=3)
+legend("bottomright", 
+  cex=0.50, 
+  pch=16, 
+  col=c("darkorchid3", "chartreuse", "dodgerblue1"), 
+  legend=c("Setosa", "Versicolor", "Virginica"), 
+  ncol=3)
   
