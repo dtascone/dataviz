@@ -6,6 +6,8 @@ par(
   xpd=TRUE
 )
 
+#Main title
+
  
 # Create scatter plot for petals
 plot(
@@ -17,6 +19,10 @@ plot(
   xlab="Length", # x title
   ylab="Width" # y title
 )
+
+#Legend
+legend("bottomright", cex=0.50, pch=16, 
+  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Setosa", "Versicolor", "Virginica"), ncol=3)
  
 # Create scatter plot for sepal
 plot(
@@ -30,6 +36,6 @@ plot(
 )
 
 #Legend
-legend("bottomright", cex=0.75, pch=16, 
+legend("bottomright", cex=0.50, pch=16, 
   col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Setosa", "Versicolor", "Virginica"), ncol=3)
   
