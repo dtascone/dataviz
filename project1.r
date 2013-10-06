@@ -31,4 +31,5 @@ plot(
 
 #Legend
 legend("bottomright", cex=0.75, pch=16, 
-  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Stetos", "Vert", "Spet"), ncol=3)
+  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Setosa", "Versicolor", "Virginica"), ncol=3)
+  
