@@ -9,7 +9,7 @@ plot(
   iris$Petal.Length,
   iris$Petal.Width,
   pch=21, # type of symbol
-  bg=c("purple","green3","blue")[unclass(iris$Species)],
+  bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
   main="Petal", # main title
   xlab="Length", # x title
   ylab="Width" # y title
