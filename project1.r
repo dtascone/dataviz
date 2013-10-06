@@ -1,20 +1,22 @@
 # Iris Data Assignment One
 
+
 # Create two columns on single row
 par(
   mfrow=c(1,2),
   xpd=TRUE
 )
+
  
 # Create scatter plot for petals
 plot(
-  iris$Petal.Length,
-  iris$Petal.Width,
+  iris$Petal.Length, #data
+  iris$Petal.Width, #data
   pch=21, # type of symbol
-  bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
-  main="Petal Data in Centimeters", # main title
-  xlab="Length", # x title
-  ylab="Width" # y title
+  bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)], #colors
+  main="Iris Petal Size by Species", # main title
+  xlab="Length (cm)", # x title
+  ylab="Width (cm)" # y title
 )
 
 #Legend for Petals
@@ -33,9 +35,9 @@ plot(
   iris$Sepal.Width,
   pch=21,
   bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
-  main="Sepal Data in Centimeters",
-  xlab="Length",
-  ylab="Width"
+  main="Iris Sepal Size by Species",
+  xlab="Length (cm)",
+  ylab="Width (cm)"
 )
 
 #Legend for Sepals
@@ -44,7 +46,8 @@ legend("bottomright",
   pch=16, 
   col=c("darkorchid3", "chartreuse", "dodgerblue1"), 
   legend=c("Setosa", "Versicolor", "Virginica"), 
-  ncol=3)
+  ncol=3
+)
 
 
 #The means of the specie data so I could correlate the info to what my code was producing
