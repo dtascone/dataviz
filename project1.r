@@ -9,7 +9,7 @@ plot(
   iris$Petal.Length,
   iris$Petal.Width,
   pch=21, # type of symbol
-  bg=c("red","green3","blue")[unclass(iris$Species)],
+  bg=c("purple","green3","blue")[unclass(iris$Species)],
   main="Petal", # main title
   xlab="Length", # x title
   ylab="Width" # y title
@@ -20,7 +20,7 @@ plot(
   iris$Sepal.Length,
   iris$Sepal.Width,
   pch=21,
-  bg=c("red","green3","blue")[unclass(iris$Species)],
+  bg=c("purple","green3","blue")[unclass(iris$Species)],
   main="Sepal",
   xlab="Length",
   ylab="Width"
