@@ -2,7 +2,10 @@
 
 # Create two columns on single row
 par(
-  mfrow=c(1,2))
+  mfrow=c(1,2),
+  xpd=TRUE
+)
+
  
 # Create scatter plot for petals
 plot(
@@ -25,3 +28,7 @@ plot(
   xlab="Length",
   ylab="Width"
 )
+
+#Legend
+legend("bottomright", cex=0.75, pch=16, 
+  col=c("darkorchid3", "chartreuse", "dodgerblue1"), legend=c("Stetos", "Vert", "Spet"), ncol=3)
