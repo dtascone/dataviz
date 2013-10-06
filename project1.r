@@ -16,8 +16,8 @@ plot(
   pch=21, # type of symbol
   bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
   main="Petal", # main title
-  xlab="Length", # x title
-  ylab="Width" # y title
+  xlab="Length (in cm)", # x title
+  ylab="Width (in cm)" # y title
 )
 
 #Legend
@@ -31,8 +31,8 @@ plot(
   pch=21,
   bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
   main="Sepal",
-  xlab="Length",
-  ylab="Width"
+  xlab="Length (in cm)",
+  ylab="Width (in cm)"
 )
 
 #Legend
