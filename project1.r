@@ -20,7 +20,7 @@ plot(
   iris$Sepal.Length,
   iris$Sepal.Width,
   pch=21,
-  bg=c("purple","green3","blue")[unclass(iris$Species)],
+  bg=c("darkorchid3", "chartreuse", "dodgerblue1")[unclass(iris$Species)],
   main="Sepal",
   xlab="Length",
   ylab="Width"
