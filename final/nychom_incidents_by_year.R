@@ -1,6 +1,6 @@
 library (ggplot2)
 
-nychom <- read.table("/Users/danielletascone/dataviz/final/map_feed_incidents.txt", header=TRUE, sep="\t")
+nychom <- read.table("map_feed_incidents.txt", header=TRUE, sep="\t")
 
 year <- nychom$year
 
