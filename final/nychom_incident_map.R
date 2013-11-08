@@ -1,19 +1,10 @@
-install.packages("rgdal")
-install.packages("maptools")
-install.packages("ggplot2")
-install.packages("grid")
-
 library (ggplot2)
 library (maptools)
 library (rgdal)
 library(grid)
 
 fn <- "map_feed_incidents.txt"
-mapshape <- "/Users/danielletascone/dataviz/nybb_13a"
-fp <- "/Users/danielletascone/dataviz/"
-
-#looks at file
-setwd(fp)
+mapshape <- "nybb_13a"
 
 nychom <- read.table(fn, header=TRUE, sep="\t")
 

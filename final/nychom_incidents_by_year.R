@@ -7,4 +7,6 @@ year <- nychom$year
 names(nychom)
 head(nychom)
 
-qplot(factor(year), data=nychom, geom="bar", main="Total Number of Incidents by Year", xlab="Year", ylab="Incidents")
+qplot(factor(year), data=nychom, geom="bar", main="Total Number of Incidents by Year", xlab="Year", ylab="Number of Incidents")
+
+theme_set(theme_bw(18))
