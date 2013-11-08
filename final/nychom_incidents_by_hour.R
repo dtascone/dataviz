@@ -17,3 +17,5 @@ head(hours)
 
 
 qplot(hours, main="Incidents by Time of Day", xlab="Time (24 Hour Clock)", ylab="Number of Incidents")
+
+theme_set(theme_bw(18))
