@@ -1,12 +1,21 @@
 library (ggplot2)
 
-nychom <- read.table("map_feed_incidents.txt", header=TRUE, sep="\t")
+#file to use
+fp <- "/Users/danielletascone/dataviz/"
 
-year <- nychom$year
+#calls file for use
+setwd(fp)
 
-names(nychom)
-head(nychom)
+nychom$incident_date
 
-qplot(factor(year), data=nychom, geom="bar", main="Total Number of Incidents by Year", xlab="Year", ylab="Number of Incidents")
+month <- substring(nychom$incident_date, 1, 2)
+head(hours)
+
+
+month <- month[!(month == "")]
+head(month)
+
+
+qplot(month, main="Incidents by Month", xlab="Month", ylab="Number of Incidents")
 
 theme_set(theme_bw(18))
