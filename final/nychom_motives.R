@@ -9,7 +9,7 @@ setwd(fp)
 nychom$incident_date
 
 month <- substring(nychom$incident_date, 1, 2)
-head(hours)
+head(month)
 
 
 month <- month[!(month == "")]
